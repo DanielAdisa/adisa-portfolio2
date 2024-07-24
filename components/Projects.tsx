@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 
-type Props = {}
+type Props = {};
 
 export default function Projects({}: Props) {
     const projects = [1,2,3,4,5,6];
@@ -28,5 +28,5 @@ export default function Projects({}: Props) {
         <div className=' w-full absolute top-[30%] bg-[#25D366]/10 left-0 h-[500px] -skew-y-12'/>
         <div className=' w-full absolute top-[30%] bg-[#25D366]/10 left-0 h-[500px] skew-y-12'/>
     </div>
-  )
+  );
 }
