@@ -10,7 +10,7 @@ function ContactMe({}: Props) {
             Experience
         </h3>
         <div className=" flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center">I'm H.I.M, I deliver. <span className="underline decoration-[#25D366]/50"> Lets Talk.</span> </h4>
+            <h4 className="text-4xl font-semibold text-center">I am H.I.M, I deliver. <span className="underline decoration-[#25D366]/50"> Lets Talk.</span> </h4>
 
             <div className=" space-y-3">
                 <div className=" flex items-center space-x-5 justify-center">
