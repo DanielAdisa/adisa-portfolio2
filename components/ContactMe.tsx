@@ -1,5 +1,5 @@
 import {PhoneArrowUpRightIcon, MapPinIcon, EnvelopeIcon} from "@heroicons/react/24/solid";
-import Link from "next/link";
+import Link from "next/link"
 
 type Props = {}
 function ContactMe({}: Props) {
