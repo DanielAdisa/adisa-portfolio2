@@ -66,11 +66,17 @@ export default function Header({}: Props) {
         
         className='flex flex-row items-center text-gray-300 cursor-pointer'>
             <SocialIcon network='email' fgColor='gray' bgColor='transparent' className=' cursor-pointer' url={'mailto:adisadaniel4@gmail.com'}/>
+<<<<<<< HEAD
              <Link href={'mailto:adisadaniel4@gmail.com'}>
             <p className='hidden md:inline-flex text-sm text-gray-400'>Let Us Work Togehter</p>
             </Link>
+=======
+           <Link href={'mailto:adisadaniel4@gmail.com'}>
+              <p className='  hidden md:inline-flex text-sm text-gray-400'>Let Us Work Togehter</p>
+           </Link>
+>>>>>>> 5863dc44b83f97fc43893a1270a2baef85362003
         </motion.div>
         
-    </header>
+    </Headers>
   )
 }
