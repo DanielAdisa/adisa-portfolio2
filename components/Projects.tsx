@@ -33,7 +33,7 @@ export default function Projects({}: Props) {
                 </motion.div>
               <div>
                 <h4 className=' text-4xl font-semibold text-center'>
-                  <span className=' underline decoration-[#25D366]/50'>Case Study {i+1} of {projects.length} :</span>{" "}Netflix Clone 
+                  {/* <span className=' underline decoration-[#25D366]/50'>Case Study {i+1} of {projects.length} :</span>{" "}Netflix Clone  */}
                 </h4>
                 <p className=' text-lg text-center md:text-left '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas soluta dolore distinctio consectetur. Accusantium nisi, recusandae vel nam beatae itaque, rerum alias ratione fugit eaque voluptate asperiores minima maiores.</p>
               </div>
