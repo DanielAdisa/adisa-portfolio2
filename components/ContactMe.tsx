@@ -12,23 +12,31 @@ function ContactMe({}: Props) {
         <div className=" flex flex-col space-y-10">
             <h4 className="text-4xl font-semibold text-center">I{"'"}m H.I.M, I deliver. <span className="underline decoration-[#25D366]/50"> Lets Talk.</span> </h4>
 
-            <div className=" space-y-3">
+            <div className=" space-y-5">
                 <div className=" flex items-center space-x-5 justify-center">
                     <PhoneArrowUpRightIcon className=" text-[#25D366] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">+2348037956920</p>
-                </div>
- 
-
-                <div className=" flex items-center space-x-5 justify-center">
-                    <MapPinIcon className=" text-[#25D366] h-7 w-7 animate-ping"/>
-                    <p className="text-2xl">Abuja, Nigeria</p>
                 </div>
 
                 <div className=" flex items-center space-x-5 justify-center">
                     <EnvelopeIcon className=" text-[#25D366] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">adisadaniel4@gmail.com</p>
                 </div>
+
+                <div className=" flex items-center space-x-5 justify-center">
+                    <MapPinIcon className=" text-[#25D366] h-7 w-7 animate-ping"/>
+                    <p className="text-2xl">Abuja, Nigeria</p>
+                </div>
+
+                
             </div>
+
+            <form>
+                <div>
+                    <input type="text"  /><input type="text" />
+                </div>
+            </form>
+
         </div>
     </div>
   )
