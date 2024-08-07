@@ -1,34 +1,44 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
-import Image from 'next/image'
 import Link from 'next/link';
+import { PageInfo } from '@/typings';
+import { urlFor } from '@/src/sanity/lib/image';
+import { urlFor1 } from '@/sanity';
 
-type Props = {}
+
+
+type Props = {
+    pageInfo: PageInfo 
+}
 
 
 
-export default function Hero({}: Props) {
+export default function Hero({pageInfo}: Props) {
     const [text, count] = useTypewriter({
-        words: ["Welcome to my Portfoilio.","Hi Daniel Adisa here.","Dream It, We build It."],
+    words: [
+                "Welcome to my Portfoilio.",
+                `Hi ${pageInfo?.name} here.`,
+                "Dream It, We build It."
+            ],
         loop: true,
         delaySpeed:2000,
     });
 
     const [title, count1] = useTypewriter({
-        words: ["Software Engineer","Graphics Designer","3D Artist","Data Analyst"],
+        words: ["Software Engineer",`${pageInfo?.role}`,"3D Artist","Data Analyst"],
         loop: true,
         delaySpeed:2000,
     });
   return (
     <div className=' h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden scroll-smooth'>
         <BackgroundCircles/>
-            <Image
+            <img
             className=' relative rounded-full h-32 w-32 mx-auto object-cover'
-            src='/IMG_20190908_102805.jpg'
+            src={urlFor(pageInfo?.profilePic).url()}
             height={3264}
             width={2448}
-            alt='Mine'
+            alt='mine'
             />
         <div className=' z-20'>
             <h2 className=' text-sm uppercase text-gray-400 font-semibold pb-2 tracking-[15px]'>{title}

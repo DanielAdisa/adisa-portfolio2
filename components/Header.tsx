@@ -3,10 +3,13 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import Link from 'next/link'
+import { Social } from '@/typings'
 
-type Props = {}
+type Props = {
+  socials: Social[];
+}
 
-export default function Header({}: Props) {
+export default function Header({socials}: Props) {
   return (
     <header className=' sticky top-0  p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center shadow-md rounded-b-lg'>
       {/* border-b-[#25D366] rounded-b border-b-2 border-s-fuchsia-100 */}
@@ -29,23 +32,10 @@ export default function Header({}: Props) {
 
         className='flex flex-row items-center'>
             {/* Social Icons */}
-            <SocialIcon url="https://www.linkedin.com/in/daniel-adisa7b076a199" fgColor='#0077B5' bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out'/>
-            <SocialIcon url="https://drive.google.com/drive/folders/1n4BKYl-ILS_EE5JCKPVKreKX6641-8l-" fgColor=' 	#EA4335' bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out'/>
-            <SocialIcon url="https://www.instagram.com/daniel.made.it?igsh=MXY2Nmt3bWRvaHJxdQ==" fgColor='#962fbf' bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out'/>
-            <SocialIcon url="http://www.behance.net/gallery/150840233/Sus-Flowers" fgColor='#5DA5FF' bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out'/>
-            <SocialIcon network='whatsapp' url="https://wa.me/message/V4TC5GSQTN7RM1" fgColor='#25D366' bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out' />
+            {socials.map((social) =>(
+               <SocialIcon key={social._id} url={social.url} fgColor={social.color} network={social.network} bgColor='transparent' className=' hover:scale-110 transition-all ease-in-out'/>
+            ))}
         </motion.div>
-
-        {/* <motion.div>
-          <Link href="/about">
-          <Image
-           src="/Assassas.svg"
-           width={100}
-           height={100}
-           alt="Picture of the author"
-          />
-          </Link>
-        </motion.div> */}
       
         <motion.div 
         initial={{

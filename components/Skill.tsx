@@ -16,6 +16,7 @@ export default function Skill({ directionLeft }: Props) {
               }}
               transition={{duration:1}}
               whileInView={{opacity: 1, x:0}}
+              viewport={{once:true,}}
         >
               <Image
                 src={"/IMG_20190908_102805.jpg"} 

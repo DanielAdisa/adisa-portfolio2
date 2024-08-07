@@ -35,12 +35,12 @@ function ContactMe({}: Props) {
                 </div>
 
                 <div className=" flex items-center space-x-5 justify-center">
-                    <EnvelopeIcon className=" text-[#25D366] h-7 w-7 animate-pulse"/>
+                    <EnvelopeIcon className=" text-[#25D366] h-7 w-7 animate-ping"/>
                     <p className="text-2xl">adisadaniel4@gmail.com</p>
                 </div>
 
                 <div className=" flex items-center space-x-5 justify-center">
-                    <MapPinIcon className=" text-[#25D366] h-7 w-7 animate-ping"/>
+                    <MapPinIcon className=" text-[#25D366] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">Abuja, Nigeria</p>
                 </div>
 

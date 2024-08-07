@@ -16,5 +16,15 @@ export const social = defineType({
       title: 'Url',
       type: 'url',
     },
+    {
+      name: 'color',
+      title: 'Color',
+      type: 'string',
+    },
+    {
+      name: 'network',
+      title: 'Network',
+      type: 'string',
+    },
   ],
 })
